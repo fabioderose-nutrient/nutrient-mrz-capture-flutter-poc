@@ -1,0 +1,30 @@
+name: mrz_capture
+description: On-device passport MRZ reading and document generation with the Nutrient Android OCR and the Nutrient Flutter SDK.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.22.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Nutrient Flutter SDK: viewer for the generated documents (view, annotate, sign).
+  nutrient_flutter: ^5.5.1
+  # PDF bytes for the generated documents.
+  pdf: ^3.12.0
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/samples/
